@@ -1,5 +1,6 @@
 #!/bin/bash
 
-ls | git add
-ls | git push
-git commit -m $1
+git add *
+git commit -m "$*"
+git push -u origin master
+
